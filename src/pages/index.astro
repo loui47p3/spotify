@@ -1,15 +1,86 @@
 ---
+import "../styles/style.css";
+import Card from "../components/Card.astro";
+import Navigation from "../components/Navigation.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>Astro</title>
+  </head>
+  <Navigation />
+  <body>
+    <h1>Focus</h1>
+    <main>
+      <div class="grid">
+        <div class="card">
+          <Card header="Peaceful Piano" text="Relax and indulge with beautiful piano pieces">
+            <img src="/peaceful_piano.jpeg" alt="piano" />
+          </Card>
+        </div>
+
+        <div class="card">
+          <Card header="Deep Focus" text="Keep calm and focus with ambient and post..">
+            <img src="/deep_focus.jpeg" alt="piano" />
+          </Card>
+        </div>
+
+        <div class="card">
+          <Card header="Instrumental Study" text="Focus with soft study music on the..">
+            <img src="/instrumental_study.jpeg" alt="piano" />
+          </Card>
+        </div>
+
+        <div class="card">
+          <Card header="Jazz Vibes" text="The original chill instrumental beats..">
+            <img src="/jazz_vibes.jpeg" alt="piano" />
+          </Card>
+        </div>
+
+        <div class="card">
+          <Card header="Focus Flow" text="Uptempo instrumental hip hop beats">
+            <img src="/focus_flow.jpeg" alt="piano" />
+          </Card>
+        </div>
+      </div>
+
+      <h1>Spotify Playlists</h1>
+      <div class="grid">
+        <div class="card">
+          <Card header="Today's Top Hits" text="The Weeknd & Ariana Grande are on top of th..">
+            <img src="/tth.jpeg" alt="piano" />
+          </Card>
+        </div>
+
+        <div class="card">
+          <Card header="RapCaviar" text="New music from Don Toliver, Quavo, Yeat an...">
+            <img src="/rap_caviar.jpeg" alt="piano" />
+          </Card>
+        </div>
+
+        <div class="card">
+          <Card header="All Out 2010s" text="The biggest songs of the 2010s.">
+            <img src="/all_out_2010s.jpeg" alt="piano" />
+          </Card>
+        </div>
+
+        <div class="card">
+          <Card header="Rock Classics" text="Rock legends & epic songs that continues to..">
+            <img src="/rock_classics.jpeg" alt="piano" />
+          </Card>
+        </div>
+
+        <div class="card">
+          <Card header="Chill Hits" text="Kick back to the best new and recent chill hits.">
+            <img src="/chill_hits.jpeg" alt="piano" />
+          </Card>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
